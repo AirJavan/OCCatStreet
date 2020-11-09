@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs'
+platform :ios, '9.0'
+
+target 'CatStreet' do
+  pod 'AFNetworking'
+  pod 'JXCategoryView'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'Masonry'
+  pod 'YYKit'
+  pod 'IQKeyboardManager'
+  pod 'LYEmptyView'
+  pod 'SDWebImage'
+  pod 'TZImagePickerController'
+  pod 'SDCycleScrollView'
+  pod 'TABAnimated', '2.4.7'
+  pod 'UMCCommon'
+  pod 'IGListKit'
+  pod 'CYLTabBarController'
+  pod 'RTRootNavigationController'
+  pod 'SVGKit'
+  pod 'lottie-ios', '=2.5.3'
+  pod 'MBProgressHUD'
+  pod 'ReactiveObjC'
+end
+

@@ -1,0 +1,125 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
+  - CYLTabBarController (1.29.0):
+    - CYLTabBarController/Core (= 1.29.0)
+  - CYLTabBarController/Core (1.29.0)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - IQKeyboardManager (6.5.6)
+  - JXCategoryView (1.5.6)
+  - lottie-ios (2.5.3)
+  - LYEmptyView (1.3.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.2)
+  - MJRefresh (3.5.0)
+  - ReactiveObjC (3.1.1)
+  - RTRootNavigationController (0.7.2):
+    - RTRootNavigationController/Core (= 0.7.2)
+  - RTRootNavigationController/Core (0.7.2)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
+  - TABAnimated (2.4.7)
+  - TZImagePickerController (3.4.2)
+  - UMCCommon (7.1.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CYLTabBarController
+  - IGListKit
+  - IQKeyboardManager
+  - JXCategoryView
+  - lottie-ios (= 2.5.3)
+  - LYEmptyView
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - ReactiveObjC
+  - RTRootNavigationController
+  - SDCycleScrollView
+  - SDWebImage
+  - SVGKit
+  - TABAnimated (= 2.4.7)
+  - TZImagePickerController
+  - UMCCommon
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - AFNetworking
+    - CocoaLumberjack
+    - CYLTabBarController
+    - IGListDiffKit
+    - IGListKit
+    - IQKeyboardManager
+    - JXCategoryView
+    - lottie-ios
+    - LYEmptyView
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - RTRootNavigationController
+    - SDCycleScrollView
+    - SDWebImage
+    - SVGKit
+    - TABAnimated
+    - TZImagePickerController
+    - UMCCommon
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
+  TABAnimated: e9f10dcea1acee9d2e9b7694c12b8b905b1551ce
+  TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
+  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 5b960459aa5e76f05571b2281ec7693cef5f2e80
+
+COCOAPODS: 1.9.3
