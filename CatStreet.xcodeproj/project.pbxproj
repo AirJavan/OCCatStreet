@@ -15,7 +15,6 @@
 		115220A92550EC43007B1CBE /* CSRequestBunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152209F2550EC43007B1CBE /* CSRequestBunch.m */; };
 		115220AA2550EC43007B1CBE /* AFHTTPSessionManager+CSCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220A12550EC43007B1CBE /* AFHTTPSessionManager+CSCategories.m */; };
 		115220AC2550EC43007B1CBE /* CSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220A42550EC43007B1CBE /* CSRequest.m */; };
-		115220AD2550EC43007B1CBE /* CSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220A62550EC43007B1CBE /* CSNetwork.m */; };
 		115220EA25510BD2007B1CBE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220E925510BD2007B1CBE /* BaseViewController.m */; };
 		115220EE25510BF4007B1CBE /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220ED25510BF4007B1CBE /* BaseTableView.m */; };
 		115220F225510C07007B1CBE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115220F125510C07007B1CBE /* BaseTableViewCell.m */; };
@@ -64,12 +63,10 @@
 		1152209D2550EC43007B1CBE /* CSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSResponse.m; sourceTree = "<group>"; };
 		1152209E2550EC43007B1CBE /* CSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRequest.h; sourceTree = "<group>"; };
 		1152209F2550EC43007B1CBE /* CSRequestBunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRequestBunch.m; sourceTree = "<group>"; };
-		115220A02550EC43007B1CBE /* CSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNetwork.h; sourceTree = "<group>"; };
 		115220A12550EC43007B1CBE /* AFHTTPSessionManager+CSCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+CSCategories.m"; sourceTree = "<group>"; };
 		115220A32550EC43007B1CBE /* CSRequestBunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRequestBunch.h; sourceTree = "<group>"; };
 		115220A42550EC43007B1CBE /* CSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRequest.m; sourceTree = "<group>"; };
 		115220A52550EC43007B1CBE /* CSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSResponse.h; sourceTree = "<group>"; };
-		115220A62550EC43007B1CBE /* CSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNetwork.m; sourceTree = "<group>"; };
 		115220A72550EC43007B1CBE /* AFHTTPSessionManager+CSCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+CSCategories.h"; sourceTree = "<group>"; };
 		115220D72550FF78007B1CBE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		115220E825510BD2007B1CBE /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -172,8 +169,6 @@
 		1152209C2550EC43007B1CBE /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				115220A02550EC43007B1CBE /* CSNetwork.h */,
-				115220A62550EC43007B1CBE /* CSNetwork.m */,
 				115220A52550EC43007B1CBE /* CSResponse.h */,
 				1152209D2550EC43007B1CBE /* CSResponse.m */,
 				1152209E2550EC43007B1CBE /* CSRequest.h */,
@@ -622,7 +617,6 @@
 				115220AC2550EC43007B1CBE /* CSRequest.m in Sources */,
 				1152211D2551333C007B1CBE /* StreetViewController.m in Sources */,
 				1158A2A52556777500FD42A8 /* InputCell.m in Sources */,
-				115220AD2550EC43007B1CBE /* CSNetwork.m in Sources */,
 				11E650AA254CF5DF0044B491 /* SceneDelegate.m in Sources */,
 				11A69AA225524F8100915149 /* PhoneLoginViewController.m in Sources */,
 				11522119255132F9007B1CBE /* RadioViewController.m in Sources */,
@@ -772,7 +766,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4AV369R4L;
-				GCC_PREFIX_HEADER = /Users/nieyibo/Desktop/OC/CatStreet/CatStreet/Profile/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CatStreet/Profile/PrefixHeader.pch";
 				INFOPLIST_FILE = CatStreet/Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,7 +786,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4AV369R4L;
-				GCC_PREFIX_HEADER = /Users/nieyibo/Desktop/OC/CatStreet/CatStreet/Profile/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CatStreet/Profile/PrefixHeader.pch";
 				INFOPLIST_FILE = CatStreet/Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+
 
 typedef NS_ENUM(NSUInteger, CSRequestMethod) {
     CSRequestMethod_GET,
@@ -30,14 +33,10 @@ typedef NS_ENUM(NSUInteger, CSRequestMethod) {
 @property (nonatomic, copy)NSDictionary *paramaters;
 @property (nonatomic, copy)NSDictionary *headers;
 
-@property (nonatomic, strong, readonly)NSURLSessionTask *task;
-@property (nonatomic, strong, readonly)NSString *identifier;
-
 @property (nonatomic, assign)BOOL automaticHandleError;
+@property (nonatomic, strong)NSURLSessionTask *task;
 
 + (instancetype)request;
-
-- (void)didSend:(NSURLSessionTask *)task;
 
 @end
 

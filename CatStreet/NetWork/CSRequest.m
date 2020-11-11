@@ -9,7 +9,6 @@
 #import "CSRequest.h"
 
 @interface CSRequest()
-@property (nonatomic, strong)NSURLSessionTask *task;
 @end
 
 @implementation CSRequest
@@ -60,9 +59,5 @@
         case CSRequestMethod_DELETE: return @"DELETE";
         default: return @"GET";
     }
-}
-
-- (void)didSend:(NSURLSessionTask *)task {
-    self.task = task;
 }
 @end

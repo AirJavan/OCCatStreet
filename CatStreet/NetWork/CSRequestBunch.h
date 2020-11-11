@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CSRequest.h"
 #import "CSResponse.h"
-#import "CSNetwork.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)requestBunch;
 
 - (void)cancelAllRequests;
-- (void)cancelRequestWithIdentifier:(NSString *)identifier;
 
 - (void)request:(void(^)(CSRequest *request))requestConfig completion:(CSNetworkBlock)completion;
 
