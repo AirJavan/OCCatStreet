@@ -82,8 +82,14 @@
                 }
                 if (response.code == CsCode_AccessToken) {
                     [self request:^(CSRequest * _Nonnull request) {
-                        request = [currentRequest copy];
-                        //替换refreshtoken
+                        request.method = currentRequest.method;
+                        request.baseServer = currentRequest.baseServer;
+                        request.path = currentRequest.path;
+                        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:currentRequest.paramaters];
+                        [dic setValue:@"" forKey:@"refreshToken"];
+                        request.paramaters = dic;
+                        request.headers = currentRequest.headers;
+                        request.automaticHandleError = currentRequest.automaticHandleError;
                     } completion:^(CSResponse * _Nonnull response) {
                         if (response.code == CsCode_RefreshToken) {
                             //展示登录界面
