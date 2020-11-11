@@ -46,6 +46,7 @@
 		11E650B2254CF5E00044B491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E650B1254CF5E00044B491 /* Assets.xcassets */; };
 		11E650B5254CF5E00044B491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E650B3254CF5E00044B491 /* LaunchScreen.storyboard */; };
 		11E650B8254CF5E00044B491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E650B7254CF5E00044B491 /* main.m */; };
+		8B7DD352255BE5640093D741 /* LogInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DD351255BE5640093D741 /* LogInViewModel.m */; };
 		EC793D60117ECDD55310B1ED /* libPods-CatStreet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E14E79D25368D204D77535B0 /* libPods-CatStreet.a */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +135,8 @@
 		11E650B6254CF5E00044B491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11E650B7254CF5E00044B491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EA754C46CEA415B0A9117AF /* Pods-CatStreet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatStreet.debug.xcconfig"; path = "Target Support Files/Pods-CatStreet/Pods-CatStreet.debug.xcconfig"; sourceTree = "<group>"; };
+		8B7DD350255BE5640093D741 /* LogInViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewModel.h; sourceTree = "<group>"; };
+		8B7DD351255BE5640093D741 /* LogInViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewModel.m; sourceTree = "<group>"; };
 		E14E79D25368D204D77535B0 /* libPods-CatStreet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CatStreet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -403,6 +406,8 @@
 			children = (
 				115B00FF2554F7DE00ECDFBA /* LoginModel.h */,
 				115B01002554F7DE00ECDFBA /* LoginModel.m */,
+				8B7DD350255BE5640093D741 /* LogInViewModel.h */,
+				8B7DD351255BE5640093D741 /* LogInViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -586,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7DD352255BE5640093D741 /* LogInViewModel.m in Sources */,
 				115220F225510C07007B1CBE /* BaseTableViewCell.m in Sources */,
 				1158A29B25566D0000FD42A8 /* ComplementPersonInfoVC.m in Sources */,
 				11522115255132E0007B1CBE /* SameCityViewController.m in Sources */,

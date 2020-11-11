@@ -5,11 +5,11 @@
 //  Created by Fluva on 2020/11/4.
 //
 
-#import "CSBaseViewModel.h"
+#import "CSBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserInfo : CSBaseViewModel
+@interface UserInfo : CSBaseModel
 <NSCopying, NSCoding>
 
 
@@ -58,20 +58,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (UserInfo *)shareInstance;
-
-
-/**
- 获取验证码
- */
-- (void)requestVerificationCodeWithPhoneNumber:(NSString *)number
-                                    completion:(CSNetworkBlock)completion;
-
-/**
- 登录
- */
-- (void)loginWithPhoneNumber:(NSString *)number
-                    password:(NSString *)password
-                  completion:(CSNetworkBlock)completion;
 
 @end
 

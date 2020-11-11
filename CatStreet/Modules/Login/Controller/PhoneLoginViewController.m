@@ -8,6 +8,7 @@
 #import "PhoneLoginViewController.h"
 #import "UserInfo.h"
 #import "UIButton+Indicator.h"
+#import "LogInViewModel.h"
 
 @interface PhoneLoginViewController ()
 <UITextFieldDelegate>
@@ -31,7 +32,7 @@
 
 @property (nonatomic, assign) LoginType loginType;
 
-@property (nonatomic, strong) UserInfo *user;
+@property (nonatomic, strong) LogInViewModel *vm;
 
 @property (nonatomic, assign) BOOL validLoginSignal;  ///登录是否能点击
 
@@ -52,7 +53,7 @@
     [super viewDidLoad];
    
     
-    self.user = [UserInfo viewModel];
+    self.vm = [LogInViewModel viewModel];
     
     self.curCount = 60;
     
@@ -257,16 +258,12 @@
 //    }
     
     
-    self.user = [[UserInfo alloc]init];
-    
 
-    [self.user loginWithPhoneNumber:self.phoneNumTfd.text
+    [self.vm loginWithPhoneNumber:self.phoneNumTfd.text
                            password:self.passWordTfd.text
-                         completion:^(CSResponse * _Nonnull response) {
-        if (response.code == CsCode_Success) {
-            UserInfo *userInfo = [UserInfo shareInstance];
-            userInfo = [UserInfo mj_objectWithKeyValues:response.jsonDic];
-            
+                       completion:^(UserInfo * _Nonnull userInfo) {
+        if (userInfo) {
+//            [UserInfo shareInstance];
         }
     }];
 }
